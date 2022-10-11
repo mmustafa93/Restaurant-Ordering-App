@@ -1,0 +1,42 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <h2>Jimmy's Diner</h2>
+                <h3>The best burgers and pizzas in town</h3>
+            </nav>
+            <main id="menu">
+            </main>
+            <section class="finalize-order no-display" id="finalize-order">
+                <h3>Your order</h3>
+                <div class="order">
+                    <div class="order-items" id="order-items"></div>
+                    <div class="total-price" id="total-price"></div>
+                </div>
+                <button class="complete-order" id="complete-order">Complete order</button>
+            </section>
+            <section id="post-order-message"></section>
+            <div class="card-form" id="card-form">
+                <div class="close-form">
+                    <button class="close-form" id="close-form">X</button>
+                </div>
+                <form class="form" id="form">
+                    <h2>Enter card details</h2>
+                    <input type="text" name="fullName" placeholder="Enter your name" required/>
+                    <input type="tel" name="cardNumber" placeholder="Enter cardnumber" required/>
+                    <input type="tel" name="CVV" placeholder="Enter CVV" required/>
+                    <button>Pay</button>
+                </form>
+                <!-- <button id="place-another-order">Place another order?</button> -->
+            </div>
+        </div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
